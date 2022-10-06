@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1bc55d6dd9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Juego Ahorcado</title>
+</head>
+<body id="menu">
+    <header class="header-juego">
+        <div class="contenedor-logo">
+            <h1>Alura</h1> 
+        </div>
+    </header>
+    <main>
+       
+        <div class="contenedorJuego">
+            <section class="canvas">
+                <canvas id="orca" width="1200px" height="820px">
+                   </canvas>
+               
+                  
+            </section>
+            <section class="contenedor-teclado">
+               <div id="teclado" >
+                    <div id="letras" >
+
+                    </div>
+                </div>
+
+                <div id="disposicionTeclado">
+                </div>
+            </section>
+
+            <section class="contenedor-btn-juego">
+                <button class="btn-reiniciar" ><a href="juego.html">Reinciar juego</a></button>
+                <button class="btn-salir" ><a href="index.html">Salir</a></button>
+            </section>
+
+            <article class="light-box" id="light-box">
+                <h2 class="ganaste"> Lo siento perdiste!!</h2>
+                <img src="./imagenes/perdiste-sin fondo.png" alt="">
+
+                <div class="contenedor-btn-juego">
+                     
+                    
+                    <button class="btn-reiniciar" ><a href="juego.html">Reinciar juego</a></button>
+                
+                    <button class="btn-salir" ><a href="index.html">Salir</a></button>
+                </div> 
+            </article>
+            
+            <article class="light-box" id="light-box-ganaste">
+                <h2 class="ganaste"> Felicidades Ganaste!!</h2>
+                <img src="./imagenes/ganaste-sin-fondo.png" alt="">
+                <div class="contenedor-btn-juego">
+                    <button class="btn-reiniciar " >
+                        <a href="juego.html">Reinciar juego</a>
+                    </button>
+                    <button class="btn-salir " >
+                        <a href="index.html">Salir</a>
+                    </button>
+                </div> 
+            </article> 
+        </div>      
+    </main>
+    <footer>
+        <h3>ONE- Oracle Next Education</h3>
+        <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/orca.js"></script>
+    <script src="js/canvas.js"></script>
+</body>
+</html>

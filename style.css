@@ -1,0 +1,662 @@
+body{
+    font-family: 'Carter One', cursive;
+    width: 100%;
+    height:auto;
+    background-color: #E5E5E5;
+    padding: 0%;
+    margin:0%;
+}
+
+header{
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    background-color: black;
+}
+
+.contenedor-logo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0%;
+    padding-top: 0%;
+    width: 100%;
+    position: absolute;    
+}
+
+h1{
+    font-family: 'Rubik Dirt', cursive;
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: 70px;
+    font-weight: 100;
+    color: rgb(212, 175, 55);
+}
+
+#content-titulo{
+    margin: 5% auto;
+    width: 100%;
+    height: 30%;
+    text-align: center;    
+}
+
+#titulo {
+    font-family: 'Carter One', cursive;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 90px;
+    font-weight:900;
+}
+
+.typed{
+    width: 100%;
+    color: black;
+    text-transform: uppercase;
+    font-size: 90px;
+    font-weight:900;
+    background-image: url("imagenes/fondo-letra.jpg");
+    background-size:contain;
+    background-position-y: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;   
+}
+
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonera{
+   display: inline-flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 400px;
+}
+
+.btn-jugar {
+    width: 320px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: 	rgb(212, 175, 55);
+    border-radius: 24px;
+    border: none;
+    transition: 1s all;
+    cursor:pointer; 
+}
+
+.btn-jugar:hover{
+    transform: scale(1.1);
+    background-color:rgb(252, 194, 4);
+}
+
+.btn-jugar a{
+    font-family: 'Carter One', cursive;
+    font-weight: 200;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.btn-agregar{
+    width: 235px;
+    height: 60px;
+    background-color: #E5E5E5;
+    border-radius: 24px;
+    border: 1px solid  rgb(212, 175, 55);
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.btn-agregar:hover{
+    transform: scale(1.2);
+}
+
+.btn-agregar a{
+    font-family: 'Carter One', cursive;;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(212, 175, 55);
+    font-weight: 400;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    background: black;
+}
+
+h3{
+    padding-top: 30px;
+    color:rgb(212, 175, 55);
+    font-weight:100;
+    font-size: 30px;
+}
+
+ul{
+    padding: 0%;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li a{
+    color:#E5E5E5;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.icon-f{
+    color:blue;
+}
+
+.icon-i{
+    color: pink;
+}
+
+.icon-w{
+    color:green
+}
+
+
+/*Menu*/
+.contenedorMenu{
+    display: block;
+    width: 100%;
+    background-color: #E5E5E5;
+}
+
+.contenedorCargarPalabra{
+    display: flex;
+    margin-top: 20%;
+    width: 100%;
+}
+
+/*input carga palabra*/
+.carga-palabra{
+    font-family: 'Carter One', cursive;
+    font-size:24px;
+    height: 100px;
+    width: 70%;
+    border-radius: 15px;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+
+.carga-palabra::placeholder{
+    font-family: 'Carter One', cursive;
+    font-weight: 200;
+    color: rgba(24, 23, 23, 0.937);
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.btn-guardar{
+    width: 30vw;
+    height: 100px;
+    margin: 0 20px;
+    background-color: black;
+    border-radius: 24px;
+    font-family: 'Carter One', cursive;
+    font-weight: 200;
+    color:darkgoldenrod;
+    font-size: 25px;
+    border: none;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.btn-guardar:hover{
+    transform: scale(1.1);
+    background-color:rgb(252, 194, 4);   
+}
+
+.contenedor_btnCargaPalabra{
+    display: flex;
+    margin: 10% ;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+}
+
+.btn-cancelar{
+    margin-left: 20px;
+}
+
+.btn-menu{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-cancelar{
+    width: 300px;
+    height: 100px;
+    background-color: 	rgb(212, 175, 55);
+    border-radius: 24px;
+    border: none;
+    transition: 1s all;
+    cursor:pointer; 
+}
+
+.btn-cancelar a{
+    font-family: 'Carter One', cursive;
+    font-weight: 200;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.btn-cancelar:hover{
+    transform: scale(1.1);
+    background-color:rgb(252, 157, 4);    
+}
+
+/*Juego ahorcado*/
+.contenedorJuego{
+    background-color: #E5E5E5;
+    width: 100%;
+}
+
+canvas{
+    width: 65vw;
+}
+
+.contenedor-logo{
+    height: 100px;
+}
+
+.contenedor-btn-juego{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.contenedor-teclado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10px;
+}
+    
+#teclado{
+    display: inline-flex;
+    max-width: 1000px;
+    width: 620px;
+    overflow: hidden;
+    position: relative;
+    overflow:hidden ;
+    order: 2;
+    padding-left: 5px;   
+} 
+
+ #letras>span {
+    padding:10px;
+    width: 55px;
+    text-align: center;
+    margin:3px;
+    float:left;
+    cursor:pointer;
+    border-radius: 10px;
+    background-color:black;
+    box-sizing: border-box;
+    color:white;
+}
+
+.btn-reiniciar, .btn-salir {
+    width: 300px;
+    height: 70px;
+    /* margin-left: 25px; */
+    margin: 30px 0 30px 25px;
+    background-color: 	rgb(212, 175, 55);
+    border-radius: 24px;
+    border: none;
+    transition: 1s all;
+    cursor:pointer; 
+}
+.btn-reiniciar:hover{
+    transform: scale(1.1);
+    background-color:rgb(252, 194, 4);
+    
+}
+
+.btn-salir:hover{
+    transform: scale(1.1);
+    background-color:rgb(252, 194, 4);
+    
+}
+
+.btn-reiniciar a{
+    font-family: 'Carter One', cursive;
+    font-weight: 200;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.btn-salir a{
+    font-family: 'Carter One', cursive;
+    font-weight: 200;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.light-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin:0;
+    background: rgba(0, 0, 0, 0.962);
+    /* background-color: white; */
+    transition: transform .3s ease-in-out; 
+    /* aparece la imagen un poco mas lento  */
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.ganaste{
+    text-align: center;
+    display:block;
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 4vw;
+    font-weight: 100;
+    color: white;
+    padding: 20px;
+    
+}
+article img{
+    display: block;
+    align-items: center;
+      
+}
+
+.light-box img{
+    margin: auto;
+    width: 40%;
+}
+
+#cargarNuevaPalabra{
+    background-color: #E5E5E5;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width:1024px) {
+    body{
+        height:auto;
+    }
+
+    #menu{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 7vw;
+    }
+
+    #titulo {
+       margin-top: 10%;
+       font-size: 7vw;    
+    }
+
+    .typed{
+        font-size: 7vw;
+    }
+
+    .btn-jugar{
+        margin-top: 30px;
+        height: 9vw;
+    }
+
+    /*juego*/
+    canvas{
+        margin: 0px;
+        width: 85vw;
+        height: auto;
+    }
+ 
+    .contenedor-btn-juego{
+        width: 100%;
+        margin: 30px auto;
+    }
+    .btn-reiniciar, .btn-salir{
+        width: 30vw;
+    }
+
+    #contenedor_letra{
+        padding-top: 15px; 
+
+    }
+
+    /*agregar palabra*/
+    .contenedorCargarPalabra{
+        margin-top: 30%;  
+    }
+
+    .carga-palabra{
+        font-size: 3vw;
+        height: 9vw;
+        border-radius: 15px;
+    }
+
+    .carga-palabra::placeholder{
+        font-size: 3vw;
+    }
+
+    .btn-guardar {
+        width: 40vw;
+        height: 10vw;
+        background-color: black;
+        color: darkgoldenrod;
+        margin-right: 10px;
+        font-size: 4vw;
+    }
+
+    .btn-cancelar{
+        margin-top: 10px;
+        height: 10vw;
+
+    }
+
+    .btn-cancelar a{
+        font-size: 3vw;
+    }
+
+    
+}
+
+@media screen and (max-width:900px) {
+
+    h1{
+        font-size: 7.5vw;
+    }
+
+    #titulo{
+        margin-top: 30%;
+    }
+
+    #palabra{
+        height: 15vw;
+        max-height: 90px;
+        width: 90%;
+        margin-bottom: 30px;
+    
+    }
+
+    .carga-palabra::placeholder{
+        font-size: 3.5vw;
+    }
+
+    .btn-guardar{
+        font-size: 4vw;
+    }
+
+    .contenedor-btn-juego{
+        display: inline-flex;
+        justify-content: space-around;
+    }
+
+    .btn-cancelar{
+        width: 30vw;
+    }
+
+    .btn-cancelar a{
+
+        font-size: 4vw;
+
+    }
+    canvas{
+        width: 95vw;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    h3{
+        font-size: 15px;
+    }
+    
+    ul li a{
+        font-size: 30px;
+    }
+
+    .contenedorCargarPalabra{
+        display: inline-block;
+        width: 100%;
+        margin-top: 30%;
+        text-align: center;
+    }
+    .contenedor_btnCargaPalabra{
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    #palabra{
+        height: 15vw;
+        max-height: 90px;
+        width: 90%;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+
+    .btn-jugar{
+        width: 50vw;
+        height: 13vw;
+    }
+
+    /*jugar*/
+    .contenedorJuego{
+        display: inline-block;
+        height: auto;
+
+    }
+    .canvas{
+        display: inline-block;
+        padding-top: 40px;
+        width: 100%;
+        
+    }
+    #orca{
+       width: 500px;
+       height: 400px;
+       margin-left: -100px;
+    }
+
+    .contenedor-teclado{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 10px;
+    }
+        
+    #teclado{
+        display: inline-flex;
+        max-width: 350px;
+        width: 350px;  
+    } 
+    
+     #letras>span {
+        padding:5px;
+        width: 30px;
+        text-align: center;
+        margin:3px;
+        font-size: 12px;
+    }
+
+    .btn-reiniciar, .btn-salir{
+        margin: 0px;
+        width: 45%;
+        max-width: 250px;
+        max-height:70px ;
+        height: 12vw;
+    }
+
+    .btn-reiniciar a, .btn-salir a{
+        font-size: 3.5vw;
+    }
+
+    /*munu*/
+    .btn-guardar{
+        width: 60%;
+        height: 15vw;
+        max-height: 90px;
+        font-size: 4.5vw;
+    }
+
+    .contenedor-btn-juego{
+        display: inline-flex;
+        justify-content: space-around;
+    }
+
+    .btn-cancelar{ 
+        width: 40vw;
+    }
+
+    .btn-cancelar a{
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width:300px) {
+
+    #orca{
+        width: 300px;
+        height: 200px;
+        margin-left: -50px;
+     }
+
+    #teclado{
+        display: inline-flex;
+        max-width: 250px;
+        width: 250px;  
+    }
+    #letras>span {
+        padding:5px;
+        width: 20px;
+        text-align: center;
+        margin:3px;
+        font-size: 9px;
+    } 
+}
+
+
+
+
+

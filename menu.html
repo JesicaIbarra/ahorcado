@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1bc55d6dd9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Juego Ahorcado</title>
+</head>
+<body id="menu">
+    <header>
+        <div class="contenedor-logo">
+            <h1>Alura</h1> 
+        </div>
+    </header>
+    <main>
+        <div class="contenedorMenu">
+            <div class="contenedorCargarPalabra" >
+                <input  class="carga-palabra" type="text" id="palabra"placeholder="Agregue aquí su palabra">
+                <input class="btn-guardar" type="button" id="btnAgregarPalbra" value="Agregar" onclick="agregarNuevaPalabra()">
+            </div>
+        
+            <div class="contenedor_btnCargaPalabra">
+                <button class="btn-cancelar" ><a href="index.html">Cancelar</a></button>
+                <button class="btn-cancelar" ><a href="juego.html">Jugar</a></button>
+            </div>                   
+    
+            <article class="light-box" id="light-box-palabra">
+                <h3> la palabra se agrego exitosamente!!</h3>
+                <div class="contenedor-btn-juego">
+                    <button class="btn-reiniciar" id="agragar" onclick="cargoPalabra()">
+                        <a>Agregar otra palabra</a>
+                    </button>
+                    <button class="btn-salir" >
+                        <a href="juego.html">Iniciar juego</a>
+                    </button>
+                </div> 
+            </article>   
+        </div>
+        
+    </main>
+    <footer>
+        <h3>ONE- Oracle Next Education</h3>
+        <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./js/orca.js"></script>
+</body>
+</html>
