@@ -212,7 +212,8 @@ ul li a{
 
 .btn-guardar:hover{
     transform: scale(1.1);
-    background-color:rgb(252, 194, 4);   
+    background-color:rgb(252, 194, 4); 
+    color:rgba(0, 0, 0, 0.962);  
 }
 
 .contenedor_btnCargaPalabra{
