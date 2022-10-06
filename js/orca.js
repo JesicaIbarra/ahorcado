@@ -2,11 +2,11 @@ let btnJugar=document.getElementById("iniciar-juego");
 const boxPerdiste = document.getElementById('light-box');
 const boxGanste = document.getElementById('light-box-ganaste');
 const boxPalabra = document.getElementById('light-box-palabra');
+
 const seccionNuevaPalabra = document.getElementById('cargarNuevaPalabra');
 const input = document.getElementById('texto');
 const abecedario = "QWERTYUIOPASDFGHJKLÑZXCVBNM";
 const querty = "QWERTYUIOPASDFGHJKLÑZXCVBNM";
- 
 const idLetras=document.getElementById("letras");
 const idDisposicionTeclado=document.getElementById("disposicionTeclado");
 
@@ -39,11 +39,11 @@ function cargoPalabra(){
     boxPalabra.style.transform= "scale(0)"
 }
 
-let palabras_4= ["ALURA", "HTML","CASA" , "ORACLE", "PROGRAMACIÓN","JAVASCRIPT"];
+let palabras_4= ["ALURA", "HTML","CASA" , "ORACLE"];
 let palabras_2=[];
 palabras_2= localStorage.getItem('data');
-let palabras_3=[];
-palabras_3 = palabras_2.split(',')
+// let palabras_3=[];
+let palabras_3 = palabras_2.split(',');
 let palabras= [];
 palabras= palabras_4.concat(palabras_3);
 
@@ -51,17 +51,19 @@ btnJugar = iniciarJuego();
 
 /*seleccion de palabra*/
 function palabrasAlazar(){
-    palabra = palabras[Math.floor(Math.random() * palabras.length)].toLocaleUpperCase();  
+    palabra = palabras[Math.floor(Math.random() * palabras.length)].toLocaleUpperCase();
+    document.getElementById('escribri-Palabra-secreta').innerHTML=palabra;
 }
-// palabraSecretaSinRepetir()
+
+function escribirPalabra(palabra){
+    document.write(palabra);
+}
 
 console.log(palabra);
-console.log(contador)
 
 function contarErrors(){
     errors=errors-1;
 }
-
 
 function palabraSecretaSinRepetir(){
     for (let i=0; i<palabra.length; i++){
@@ -70,8 +72,6 @@ function palabraSecretaSinRepetir(){
         }
     }
 }
-
-
 
 // funcion para mostrar las letras
 // tiene que recibir el listado de letras a mostrar
@@ -97,9 +97,8 @@ function teclaPulsada(event) {
     const tecla=this.classList && this.classList.contains("space") ? " " : this.innerText;
     if (abecedario.indexOf(tecla)>=0) {
         letra = tecla;
-        letraCorrecta(letra)
+        cargareLetra(letra)
         // document.getElementById("texto").value+=tecla;
-        
     }
 }
  
@@ -110,11 +109,18 @@ Array.from(idDisposicionTeclado.querySelectorAll("span")).map(el => el.addEventL
     Array.from(idDisposicionTeclado.querySelectorAll("span")).map(el => el == this ? this.classList.add("selected") : el.classList.remove("selected"));
     mostrarLetras(eval(this.innerText.toLowerCase()));
 }));
+let cargaLetraIncorrecta=[];
+function cargareLetra(letra){
+    if(!cargaLetraIncorrecta.includes(letra)){
+        cargaLetraIncorrecta.push(letra);
+        letraCorrecta(letra)
+    }
+}
 
 
 
 let contarLetra=0;
-let cargaLetraIncorrecta=[];
+
 function letraCorrecta(letra){
     if (palabra.includes(letra)){
         for(let i = 0 ; i < palabra.length; i++){
@@ -128,7 +134,7 @@ function letraCorrecta(letra){
         escribirLetraIncorrecta(letra, errors);
         dibujo=dibujo+1;
         palabraIncorrecta()
-    }
+  }
     
 }
 
@@ -173,9 +179,10 @@ function palabraIncorrecta(){
     }
     
 }
+
+
 function finJuego(){
     boxPerdiste.style.transform= "scale(1)";
-    
 }
 
 function ganaste(){
