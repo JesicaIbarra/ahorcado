@@ -43,7 +43,7 @@ let palabras_4= ["ALURA", "HTML","CASA" , "ORACLE"];
 let palabras_2=[];
 palabras_2= localStorage.getItem('data');
 // let palabras_3=[];
-let palabras_3 = palabras_2.split(',');
+let palabras_3 = palabras_2;
 let palabras= [];
 palabras= palabras_4.concat(palabras_3);
 
